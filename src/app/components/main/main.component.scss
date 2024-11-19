@@ -1,0 +1,25 @@
+.menu{
+  background-color: black;
+  border-bottom: blue solid 1px;
+  a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  div:hover{
+    background-color: white;
+    opacity: 0.1;
+    border: none;
+  }
+}
+
+.b{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: black;
+}
