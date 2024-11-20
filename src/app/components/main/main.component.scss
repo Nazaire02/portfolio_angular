@@ -1,25 +1,33 @@
-.menu{
-  background-color: black;
-  border-bottom: blue solid 1px;
-  a{
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: white;
-  }
-  div:hover{
-    background-color: white;
-    opacity: 0.1;
-    border: none;
-  }
+@import '../../../styles.scss';
+
+.layout {
+  background-color: #121212;
+  flex-grow: 1;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
 
-.b{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background-color: black;
+.main-container {
+  height: 100%;
+}
+
+.menu {
+  background-color: #121212;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.menu div:hover {
+  background-color: white;
+  opacity: 0.1;
+  border: none;
 }
