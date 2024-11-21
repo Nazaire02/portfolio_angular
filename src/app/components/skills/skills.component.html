@@ -2,32 +2,29 @@
   <div>
     <p class="title text-center">Skills</p>
   </div>
-  <div>
-    <div class="skills-group">
-      <div class="d-flex align-items-center">
-        <div style="width: 50px;">
-          <hr style="border-color: #6c757d; border-width: 2px;">
-        </div>
-        <p class="mx-3 mb-0 font-weight-bold skills-group-title">Langages de programmation</p>
-        <div class="flex-grow-1">
-          <hr style="border-color: #6c757d; border-width: 2px;">
-        </div>
+  <div *ngFor="let skillGroup of skills" class="mb-5">
+    <!-- Skill Group Header -->
+    <div class="d-flex align-items-center">
+      <div style="width: 50px;">
+        <hr style="border-color: #6c757d; border-width: 2px;">
       </div>
-      <div class="d-flex flex-row justify-content-start align-items-center mt-3">
-        <div class="card mx-2" style="width: 250px; border: none; border-radius: 8px; overflow: hidden;">
-          <div class="card-body p-2 d-flex justify-content-between align-items-center" style="background: linear-gradient(to right, black, #6c757d); color: white;">
-            <p class="mb-0 font-weight-bold" style="font-size: 1rem;">TypeScript</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript Logo" style="width: 50px;">
-          </div>
-        </div>
+      <p class="mx-3 mb-0 font-weight-bold skills-group-title">{{ skillGroup.category }}</p>
+      <div class="flex-grow-1">
+        <hr style="border-color: #6c757d; border-width: 2px;">
+      </div>
+    </div>
 
-        <div class="card mx-2" style="width: 250px; border: none; border-radius: 8px; overflow: hidden;">
-          <div class="card-body p-2 d-flex justify-content-between align-items-center" style="background: linear-gradient(to right, black, #6c757d); color: white;">
-            <p class="mb-0 font-weight-bold" style="font-size: 1rem;">JavaScript</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" style="width: 50px;">
-          </div>
+    <!-- Skills Cards -->
+    <div class="d-flex flex-wrap mt-3">
+      <div *ngFor="let item of skillGroup.items" class="card mx-2 my-2"
+        style="width: 250px; border: none; border-radius: 8px; overflow: hidden;">
+        <div class="card-body p-2 d-flex justify-content-between align-items-center"
+          style="background: linear-gradient(to right, black, #6c757d); color: white;">
+          <p class="mb-0 font-weight-bold" style="font-size: 1rem;">{{ item.name }}</p>
+          <img [src]="item.logo" [alt]="item.name + ' Logo'" style="width: 50px;">
         </div>
       </div>
     </div>
   </div>
+
 </div>
