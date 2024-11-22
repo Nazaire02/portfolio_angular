@@ -1,0 +1,32 @@
+@import '../../../styles.scss';
+
+.projet-card{
+  border: solid 1px #6c757d;
+  border-radius: 10px;
+  margin-bottom: 19px;
+}
+
+.mission-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.mission-list li {
+  margin-bottom: 8px;
+}
+
+p, h5, a, li{
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-h{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h5{
+    font-weight: bold;
+  }
+}
