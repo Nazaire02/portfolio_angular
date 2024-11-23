@@ -1,21 +1,36 @@
 <div class="main-container d-flex flex-column vh-100">
-  <div class="menu d-flex justify-content-center">
-    <div class="py-3 px-4"  routerLink="/">
-      <a>N'DOUFFOU MANDA N.</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand fw-bold" routerLink="/">N'DOUFFOU MANDA N.</a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links (collapsed on small screens) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/projects">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/experiences">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/resume">Résumé</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="py-3 px-4" routerLink="/skills">
-      <a>Skills</a>
-    </div>
-    <div class="py-3 px-4" routerLink="/projects">
-      <a>Projets</a>
-    </div>
-    <div class="py-3 px-4" routerLink="/experiences">
-      <a>Expériences</a>
-    </div>
-    <div class="py-3 px-4" routerLink="/resume">
-      <a>Résumé</a>
-    </div>
-  </div>
+  </nav>
+
+  <!-- Main content -->
   <div class="layout">
     <router-outlet></router-outlet>
   </div>
