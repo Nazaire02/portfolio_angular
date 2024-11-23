@@ -1,9 +1,13 @@
 @import '../../../styles.scss';
 
-.projet-card{
+.projet-card {
   border: solid 1px #6c757d;
   border-radius: 10px;
   margin-bottom: 19px;
+}
+
+.projet-card:hover {
+  background: linear-gradient(to right, black, #6c757d);
 }
 
 .mission-list {
@@ -16,17 +20,17 @@
   margin-bottom: 8px;
 }
 
-p, h5, a, li{
+p, h5, a, li {
   margin: 0px;
   font-family: 'Inter', sans-serif;
 }
 
-.card-h{
+.card-h {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  h5{
+  h5 {
     font-weight: bold;
   }
 }

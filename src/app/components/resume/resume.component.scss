@@ -1,0 +1,19 @@
+.download {
+  border: 2px solid #6c757d;  /* Light border color */
+  padding: 10px 20px;  /* Add some padding inside the border */
+  border-radius: 5px;  /* Rounded corners for the border */
+  display: inline-block;  /* Make it shrink to fit the content */
+}
+
+.download a {
+  font-family: 'Inter', sans-serif;  /* Ensure consistent font */
+  font-weight: bold;  /* Bold text */
+  color: #6c757d;  /* Dark text color */
+  margin: 0;  /* Remove default margin */
+  text-transform: uppercase;  /* Optional: make text uppercase for emphasis */
+  text-decoration: none;
+}
+
+.download:hover {
+  cursor: pointer;  /* Change cursor to indicate it's clickable */
+}

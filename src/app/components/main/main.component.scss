@@ -26,6 +26,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+.menu div{
+  cursor: pointer;
+}
+
 .menu div:hover {
   background-color: white;
   opacity: 0.1;
