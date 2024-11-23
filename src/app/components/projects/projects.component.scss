@@ -30,3 +30,13 @@ p, h5, a, li{
     font-weight: bold;
   }
 }
+
+.project-link {
+  color: #00d1ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #4dcaff;
+}
