@@ -1,16 +1,10 @@
-<div class="main-container d-flex flex-column vh-100">
-  <!-- Navbar -->
+<div class="main-container d-flex flex-column">
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container-fluid">
-      <!-- Navbar brand -->
       <a class="navbar-brand fw-bold" routerLink="/">N'DOUFFOU MANDA N.</a>
-
-      <!-- Toggler for mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Navbar links (collapsed on small screens) -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -29,8 +23,6 @@
       </div>
     </div>
   </nav>
-
-  <!-- Main content -->
   <div class="layout">
     <router-outlet></router-outlet>
   </div>
