@@ -36,8 +36,7 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
-            "baseHref": "/portefolio-angular/"
+            ]
           },
           "configurations": {
             "production": {
@@ -105,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
